@@ -33,7 +33,7 @@ const getTime = () => {
     const minute = date.getMinutes();
     const seconds = date.getSeconds();
 
-    hourHand.style.transform = `translate(0, -50%) rotate(${(hour-12) * 30}deg)`;
+    hourHand.style.transform = `translate(0, -50%) rotate(${hour * 30}deg)`;
     minuteHand.style.transform = `translate(0, -50%) rotate(${minute * 6}deg)`;
     secondHand.style.transform = `translate(0, -50%) rotate(${seconds * 6}deg)`;
 };
